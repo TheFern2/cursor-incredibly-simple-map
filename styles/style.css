@@ -24,12 +24,30 @@ h1 {
     margin-bottom: 20px;
 }
 
-#map {
+#cesiumContainer {
     width: 100%;
     height: 80vh;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Custom Cesium widget styles */
+.cesium-viewer {
+    border-radius: 8px;
+}
+
+.cesium-viewer-bottom {
+    bottom: 10px !important;
+}
+
+.cesium-viewer-timelineContainer {
+    display: none;
+}
+
+.cesium-viewer-animationContainer {
+    display: none;
 }
 
 /* Custom popup styles */
@@ -56,7 +74,7 @@ h1 {
         padding: 10px;
     }
 
-    #map {
+    #cesiumContainer {
         height: 70vh;
     }
 } 
